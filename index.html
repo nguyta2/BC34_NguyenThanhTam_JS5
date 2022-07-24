@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>1. Quản lý tuyển sinh</h3>
+          <div class="card">
+            <div class="card-header">Quản lý tuyển sinh</div>
+            <div class="card-body">
+              <div class="form-group">
+                <input type="number" class="form-control" id="score" placeholder="Điểm chuẩn" />
+              </div>
+              <div class="form-group">
+                <select class="form-control" id="zone">
+                  <option>Chọn khu vực</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <select class="form-control" id="member">
+                  <option>Chọn đối tượng</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <input type="number" class="form-control" id="score1" placeholder="Điểm môn 1" />
+              </div>
+              <div class="form-group">
+                <input type="number" class="form-control" id="score2" placeholder="Điểm môn 2" />
+              </div>
+              <div class="form-group">
+                <input type="number" class="form-control" id="score3" placeholder="Điểm môn 3" />
+              </div>
+              <button class="btn btn-success my-2" id="btnResult">
+                Kết quả
+              </button>
+            </div>
+            <div class="card-footer" id="announceResult"></div>
+          </div>
+
+          <!-- 2. Tính tiền điện -->
+          <hr>
+          <h3>2. Tính tiền điện</h3>
+          <div class="card">
+            <div class="card-header">Tính tiền điện</div>
+            <div class="card-body">
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" placeholder="Nhập tên" />
+              </div>
+              <div class="form-group">
+                <input type="number" class="form-control" id="Kw" placeholder="Số Kw" />
+              </div>
+              <button class="btn btn-success my-2" id="btnCalcElectricity">
+                Tính tiền điện
+              </button>
+            </div>
+            <div class="card-footer" id="announceElectricity"></div>
+          </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
